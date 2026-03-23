@@ -480,6 +480,13 @@
     },
     {
       "type": "Community SAP",
+      "name": "SAP CLI (sapcli)",
+      "repo": "jfilak/sapcli",
+      "purpose": "Python CLI for SAP ADT and RFC operations: ABAP unit tests, ATC checks, transports, gCTS, abapGit install, and more.",
+      "notes": "Useful companion to ABAP MCP workflows for CI automation."
+    },
+    {
+      "type": "Community SAP",
       "name": "GitHub Copilot for Eclipse",
       "repo": "eclipse-copilot/eclipse-copilot",
       "purpose": "GitHub Copilot integration plugin for Eclipse IDE.",
