@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T06:20:37.346Z",
+  "generatedAt": "2026-03-28T08:53:30.566Z",
   "sourceCatalog": "data/catalog.json",
   "repoCount": 62,
   "tokenUsed": true,
@@ -121,19 +121,6 @@
       "description": "Server for SAP Cloudification Repository - Clean Core Level A/B/C/D filtering",
       "htmlUrl": "https://github.com/ClementRingot/sap-released-objects-server"
     },
-    "DassianInc/dassian-adt": {
-      "repo": "DassianInc/dassian-adt",
-      "source": "manual",
-      "exists": true,
-      "fork": false,
-      "parent": null,
-      "stars": 0,
-      "lastChange": null,
-      "archived": false,
-      "license": "MIT",
-      "description": "MCP server for SAP ABAP development via the ADT API.",
-      "htmlUrl": "https://github.com/DassianInc/dassian-adt"
-    },
     "CostingGeek/sap-mcp": {
       "repo": "CostingGeek/sap-mcp",
       "source": "api",
@@ -146,6 +133,19 @@
       "license": "MIT",
       "description": "An MCP server to retrieve information like Sales Orders from the SAP Graph API Sandbox",
       "htmlUrl": "https://github.com/CostingGeek/sap-mcp"
+    },
+    "DassianInc/dassian-adt": {
+      "repo": "DassianInc/dassian-adt",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 6,
+      "lastChange": "2026-03-28T00:14:18Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for SAP ABAP development via ADT API. Connect AI assistants to SAP: read, write, test, and deploy ABAP code without SAP GUI.",
+      "htmlUrl": "https://github.com/DassianInc/dassian-adt"
     },
     "DataZooDE/erpl-adt": {
       "repo": "DataZooDE/erpl-adt",
@@ -316,19 +316,6 @@
       "description": "An MCP (Model Context Protocol) server for SAP Analytics Cloud. Connects LLMs like Claude and Cursor to SAC for data export, content management, and smart queries.",
       "htmlUrl": "https://github.com/JumenEngels/sap_analytics_cloud_mcp"
     },
-    "kts982/mcp-sap-gui": {
-      "repo": "kts982/mcp-sap-gui",
-      "source": "manual",
-      "exists": true,
-      "fork": false,
-      "parent": null,
-      "stars": 0,
-      "lastChange": null,
-      "archived": false,
-      "license": "MIT",
-      "description": "Full SAP GUI for Windows automation via Scripting API — 52 MCP tools.",
-      "htmlUrl": "https://github.com/kts982/mcp-sap-gui"
-    },
     "KEIDAI-TechTime/sap-claude-skills": {
       "repo": "KEIDAI-TechTime/sap-claude-skills",
       "source": "api",
@@ -341,6 +328,19 @@
       "license": null,
       "description": "SAP Claude Code Skills for addon development projects",
       "htmlUrl": "https://github.com/KEIDAI-TechTime/sap-claude-skills"
+    },
+    "kts982/mcp-sap-gui": {
+      "repo": "kts982/mcp-sap-gui",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 1,
+      "lastChange": "2026-03-26T14:50:41Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for SAP GUI for Windows automation via the SAP GUI Scripting API.",
+      "htmlUrl": "https://github.com/kts982/mcp-sap-gui"
     },
     "lemaiwo/ai-core-mcp-server": {
       "repo": "lemaiwo/ai-core-mcp-server",
@@ -413,7 +413,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 246,
+      "stars": 248,
       "lastChange": "2026-03-26T09:04:36Z",
       "archived": false,
       "license": "MIT",
@@ -465,7 +465,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 104,
+      "stars": 105,
       "lastChange": "2025-02-27T06:04:40Z",
       "archived": false,
       "license": "MIT",
@@ -478,7 +478,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 101,
+      "stars": 102,
       "lastChange": "2025-09-09T16:31:54Z",
       "archived": false,
       "license": "MIT",
@@ -491,7 +491,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 95,
+      "stars": 96,
       "lastChange": "2025-02-26T00:44:47Z",
       "archived": false,
       "license": "MIT",
@@ -687,7 +687,7 @@
       "fork": false,
       "parent": null,
       "stars": 134,
-      "lastChange": "2026-03-27T21:59:34Z",
+      "lastChange": "2026-03-28T07:13:04Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",
@@ -712,7 +712,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 164,
+      "stars": 165,
       "lastChange": "2026-03-14T22:40:04Z",
       "archived": false,
       "license": "GPL-3.0",
