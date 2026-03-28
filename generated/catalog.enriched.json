@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-03-28T06:20:37.346Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 60,
+  "repoCount": 61,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -120,6 +120,19 @@
       "license": "MIT",
       "description": "Server for SAP Cloudification Repository - Clean Core Level A/B/C/D filtering",
       "htmlUrl": "https://github.com/ClementRingot/sap-released-objects-server"
+    },
+    "DassianInc/dassian-adt": {
+      "repo": "DassianInc/dassian-adt",
+      "source": "manual",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": null,
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for SAP ABAP development via the ADT API.",
+      "htmlUrl": "https://github.com/DassianInc/dassian-adt"
     },
     "CostingGeek/sap-mcp": {
       "repo": "CostingGeek/sap-mcp",

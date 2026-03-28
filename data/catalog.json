@@ -186,6 +186,13 @@
           "repo": "ClementRingot/sap-released-objects-mcp-server",
           "purpose": "Gives AI agents real-time knowledge of which SAP objects are released for ABAP Cloud / Clean Core — and what to use instead when they're not.",
           "notes": "Live server at sap-released-objects-mcp-server-production.up.railway.app/mcp."
+        },
+        {
+          "type": "Community SAP",
+          "name": "Dassian ADT",
+          "repo": "DassianInc/dassian-adt",
+          "purpose": "MCP server for SAP ABAP development via ADT API — read, write, test, and deploy ABAP code without SAP GUI.",
+          "notes": "TypeScript/Node.js. Supports S/4HANA with automatic SAP release detection."
         }
       ]
     },

@@ -18,6 +18,9 @@
     },
     "weiserman/rap-skills": {
       "license": "MIT"
+    },
+    "DassianInc/dassian-adt": {
+      "license": "MIT"
     }
   }
 }
