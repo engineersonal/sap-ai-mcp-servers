@@ -371,6 +371,13 @@
           "repo": "toni-ramchandani/sapient-mcp",
           "purpose": "RoboSAPiens-based SAP GUI automation server.",
           "notes": "Focused on intelligent SAP GUI automation."
+        },
+        {
+          "type": "Community SAP",
+          "name": "MCP SAP GUI (Scripting API)",
+          "repo": "kts982/mcp-sap-gui",
+          "purpose": "Full SAP GUI for Windows automation via Scripting API — 52 MCP tools for screen discovery, navigation, field I/O, table and tree operations, and screenshot capture.",
+          "notes": "Read-only by default with MCP tool annotations, transaction allowlist for safe automation, COM retry for transient errors."
         }
       ]
     },

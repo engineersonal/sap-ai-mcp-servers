@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-03-28T06:20:37.346Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 61,
+  "repoCount": 62,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -315,6 +315,19 @@
       "license": "MIT",
       "description": "An MCP (Model Context Protocol) server for SAP Analytics Cloud. Connects LLMs like Claude and Cursor to SAC for data export, content management, and smart queries.",
       "htmlUrl": "https://github.com/JumenEngels/sap_analytics_cloud_mcp"
+    },
+    "kts982/mcp-sap-gui": {
+      "repo": "kts982/mcp-sap-gui",
+      "source": "manual",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": null,
+      "archived": false,
+      "license": "MIT",
+      "description": "Full SAP GUI for Windows automation via Scripting API — 52 MCP tools.",
+      "htmlUrl": "https://github.com/kts982/mcp-sap-gui"
     },
     "KEIDAI-TechTime/sap-claude-skills": {
       "repo": "KEIDAI-TechTime/sap-claude-skills",

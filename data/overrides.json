@@ -21,6 +21,9 @@
     },
     "DassianInc/dassian-adt": {
       "license": "MIT"
+    },
+    "kts982/mcp-sap-gui": {
+      "license": "MIT"
     }
   }
 }
