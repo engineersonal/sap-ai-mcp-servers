@@ -98,6 +98,13 @@
       "entries": [
         {
           "type": "Community SAP",
+          "name": "ARC-1 SAP ADT MCP Server",
+          "repo": "marianfoo/arc-1",
+          "purpose": "Secure-by-default, enterprise-ready SAP ABAP MCP server for developer IDEs, Microsoft Copilot, and any MCP client via BTP OAuth and the ADT REST API.",
+          "notes": "Built for real-world SAP AI workflows: token-efficient tool design, safety profiles and allowlists, per-user principal propagation, OIDC/XSUAA/API key auth, BTP Cloud Foundry and on-prem deployment, npm + Docker distribution, and 1,367+ unit tests plus integration and E2E coverage."
+        },
+        {
+          "type": "Community SAP",
           "name": "ABAP MCP Server SDK",
           "repo": "abap-ai/mcp",
           "purpose": "Build MCP servers directly in ABAP.",
