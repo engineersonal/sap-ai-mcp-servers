@@ -2,6 +2,8 @@
 
 Comprehensive list of SAP-related MCP servers and SAP AI development skills repositories.
 
+**New repositories:** [CHANGELOG.md](CHANGELOG.md) — dates when entries were added to this list.
+
 > [!IMPORTANT]
 > Last generated: **{{LAST_UPDATED}}**
 >

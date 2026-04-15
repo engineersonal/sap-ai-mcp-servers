@@ -34,7 +34,7 @@ Run `npm run build` to execute the full pipeline locally.
 
 ## How to add a new entry
 
-**All new entries go into `data/catalog.json`.** That is the only file you need to edit to add a repo to the list.
+**New list entries go into `data/catalog.json`.** For any new GitHub **`repo`**, also update **`CHANGELOG.md`** (see Step 3) so the “new repositories” link in the README stays accurate.
 
 ### Step 1 — Choose the right section
 
@@ -56,6 +56,8 @@ Each `categories` entry has an `id` and `title`. Current category IDs:
 - `sap-odata-gateway-graph-mcp-server` — OData / Gateway / SAP Graph bridges
 - `sap-gui` — SAP GUI automation
 - `sap-hana` — SAP HANA
+- `odata-mcp-proxy-ecosystem` — OData MCP Proxy and config-driven consumers (BTP, CI, AI Core)
+- `sap-cloud-alm` — SAP Cloud ALM
 
 ### Step 2 — Add the entry object
 
@@ -114,7 +116,18 @@ Append a new object to the `entries` array of the correct category (or to `skill
 | `url` | no | Use instead of `repo` for non-GitHub entries |
 | `linkLabel` | no | Custom link label when using `url` |
 
-### Step 3 — Run the build
+### Step 3 — Update CHANGELOG.md (new GitHub repos only)
+
+The README links to [`CHANGELOG.md`](CHANGELOG.md) at the top so readers can see **when new repositories were added**. Whenever you add a catalog entry that includes a `repo` field (including `skills` / `adjacentTools` entries that point at GitHub), append a line to `CHANGELOG.md`:
+
+1. Use the **commit date** (or today’s date if you are about to commit) as the section heading: `## YYYY-MM-DD`.
+2. If that date already has a section, add a bullet under it; otherwise create a new `## YYYY-MM-DD` section **above** older dates (newest first).
+3. Each bullet should be a markdown link to `https://github.com/owner/repo` plus a short dash and label, e.g. `` [`owner/repo`](https://github.com/owner/repo) — One-line description. ``
+4. If you add a **new category** block in `catalog.json` (not just a new repo), mention it in the bullet (e.g. new category name + the repo).
+
+**Skip** `CHANGELOG.md` when the change is only metadata, text edits, or `overrides.json`. **Skip** for entries that use only `url` (no GitHub `repo`) unless you want a one-line note there for visibility.
+
+### Step 4 — Run the build
 
 ```bash
 npm run build
@@ -125,9 +138,9 @@ This will:
 2. Apply any manual overrides from `data/overrides.json`
 3. Regenerate `README.md`
 
-### Step 4 — Commit both files
+### Step 5 — Commit the changed files
 
-Always commit `data/catalog.json` together with the updated `README.md` and `generated/catalog.enriched.json`.
+Always commit `data/catalog.json` together with the updated `README.md`, `generated/catalog.enriched.json`, and **`CHANGELOG.md`** when you edited it.
 
 ---
 
@@ -153,6 +166,7 @@ Overrides are applied as the last step of `enrich-data.mjs` and are **never over
 
 - **Never edit `README.md` directly.** It is overwritten on every build.
 - **Never edit `generated/catalog.enriched.json` directly.** It is overwritten on every build.
+- **Update `CHANGELOG.md`** when adding a new entry with a GitHub `repo` (see Step 3 above). The daily workflow does not maintain it.
 - Forks are automatically excluded from all rendered tables — do not add fork repos to the catalog.
 - The `type` field must be either `"SAP"` or `"Community SAP"`. No other values are used.
 - `purpose` should be one sentence, ending with a period, describing what the tool does for a developer — not marketing language.
@@ -187,5 +201,6 @@ docs/
     add-entry.yml           ← issue form for community submissions
 
 README.md                   ← auto-generated output
+CHANGELOG.md                ← manual log of newly added repos (update when adding entries)
 LICENSE                     ← MIT
 ```
