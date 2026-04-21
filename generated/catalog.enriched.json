@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-21T06:37:53.789Z",
+  "generatedAt": "2026-04-21T07:25:03.709Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 63,
+  "repoCount": 64,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -159,6 +159,19 @@
       "license": "Apache-2.0",
       "description": "CLI and MCP server for the SAP ADT REST API — search, read/write ABAP source, run tests, manage transports. No Eclipse, no RFC SDK, no JVM.",
       "htmlUrl": "https://github.com/DataZooDE/erpl-adt"
+    },
+    "dnic-dev/bw-modeling-mcp": {
+      "repo": "dnic-dev/bw-modeling-mcp",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 13,
+      "lastChange": "2026-04-20T20:46:50Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for agentic AI-assisted development in SAP BW/4HANA",
+      "htmlUrl": "https://github.com/dnic-dev/bw-modeling-mcp"
     },
     "eclipse-copilot/eclipse-copilot": {
       "repo": "eclipse-copilot/eclipse-copilot",
@@ -478,7 +491,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 122,
+      "stars": 123,
       "lastChange": "2025-02-27T06:04:40Z",
       "archived": false,
       "license": "MIT",
@@ -700,7 +713,7 @@
       "fork": false,
       "parent": null,
       "stars": 137,
-      "lastChange": "2026-04-21T06:31:02Z",
+      "lastChange": "2026-04-21T06:55:11Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",

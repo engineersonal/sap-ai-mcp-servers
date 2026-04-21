@@ -200,6 +200,13 @@
           "repo": "DassianInc/dassian-adt",
           "purpose": "MCP server for SAP ABAP development via ADT API — read, write, test, and deploy ABAP code without SAP GUI.",
           "notes": "TypeScript/Node.js. Supports S/4HANA with automatic SAP release detection."
+        },
+        {
+          "type": "Community SAP",
+          "name": "BW Modeling MCP Server",
+          "repo": "dnic-dev/bw-modeling-mcp",
+          "purpose": "Read, create, and modify SAP BW/4HANA objects directly in a live system via the internal BWMT REST API.",
+          "notes": "First MCP server targeting SAP BW/4HANA modeling. Works with all BW/4HANA versions; partial support for BW 7.5 on HANA planned. Combines well with ADT MCP servers for ABAP/AMDP routine development."
         }
       ]
     },

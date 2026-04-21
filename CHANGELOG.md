@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-04-21
+
+- [`dnic-dev/bw-modeling-mcp`](https://github.com/dnic-dev/bw-modeling-mcp) — BW Modeling MCP Server for SAP BW/4HANA
+
 ## 2026-04-15
 
 - [`marianfoo/arc-1`](https://github.com/marianfoo/arc-1) — ARC-1 SAP ADT MCP Server
