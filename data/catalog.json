@@ -450,13 +450,6 @@
     },
     {
       "type": "Community SAP",
-      "name": "SAP Skills Power for Kiro",
-      "repo": "mfigueir/sap-skills-power",
-      "purpose": "SAP development skill pack for Kiro IDE.",
-      "notes": "Kiro-specific power package."
-    },
-    {
-      "type": "Community SAP",
       "name": "SAP Power for Kiro",
       "repo": "mfigueir/sap-power",
       "purpose": "SAP development knowledge package for Kiro IDE.",
