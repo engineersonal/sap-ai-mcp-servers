@@ -6,7 +6,7 @@ This file explains how the repository works and how to make changes to it correc
 
 ## What this repo does
 
-This is a **curated, auto-generated list** of SAP-related MCP servers, AI skills, and adjacent developer tools hosted on GitHub.
+This is a **curated, auto-generated list** of SAP-related MCP servers, AI skills, Claude plugins, and adjacent developer tools hosted on GitHub.
 
 The `README.md` is **never edited by hand**. It is always generated from structured data via scripts. The pipeline is:
 
@@ -38,17 +38,19 @@ Run `npm run build` to execute the full pipeline locally.
 
 ### Step 1 — Choose the right section
 
-`catalog.json` has three top-level arrays:
+`catalog.json` has four top-level arrays:
 
 | Key | What goes here |
 |---|---|
 | `categories` | MCP servers, grouped by topic (ABAP/ADT, OData, Docs, etc.) |
-| `skills` | AI skill files / prompt packs (Claude Code skills, Kiro packs, etc.) |
+| `skills` | Non-Claude AI skill files / prompt packs (Kiro packs, etc.) |
+| `claudePlugins` | Claude Code plugins and Claude-compatible SAP skill packs |
 | `adjacentTools` | Useful non-MCP tools adjacent to the SAP AI dev ecosystem |
 
 Each `categories` entry has an `id` and `title`. Current category IDs:
 
 - `sap-mcp-server` — Official SAP MCP servers
+- `community-sap-mcp-server` — Community general SAP MCP servers
 - `sap-docs-mcp-server` — SAP documentation MCP servers
 - `abap-and-adt-mcp-server` — ABAP/ADT MCP servers
 - `sap-integration` — SAP Integration Suite / CPI
@@ -61,7 +63,7 @@ Each `categories` entry has an `id` and `title`. Current category IDs:
 
 ### Step 2 — Add the entry object
 
-Append a new object to the `entries` array of the correct category (or to `skills` / `adjacentTools`).
+Append a new object to the `entries` array of the correct category (or to `skills` / `claudePlugins` / `adjacentTools`).
 
 **Standard GitHub repo entry:**
 
@@ -102,6 +104,24 @@ Append a new object to the `entries` array of the correct category (or to `skill
 }
 ```
 
+**Non-GitHub git repository** (Gitea, GitLab, Bitbucket, self-hosted, etc.):
+
+```json
+{
+  "type": "Community SAP",
+  "name": "Example Non-GitHub MCP",
+  "url": "https://git.example.dev/owner/repo",
+  "linkLabel": "git.example.dev/owner/repo",
+  "purpose": "What it does.",
+  "notes": "Hosted on a non-GitHub git server. Metadata is not auto-fetched.",
+  "license": "MIT",
+  "lastChange": "2026-04-26",
+  "stars": 12
+}
+```
+
+For non-GitHub entries you can optionally include inline `license`, `lastChange` (ISO date), and `stars` (integer). These render into the table the same way as fetched GitHub metadata. Leave them out if you don't have a reliable value — the columns will show `-` and `NO LICENSE FOUND`. The enrichment script does not touch these fields; treat them as a one-time manual snapshot.
+
 ### Field reference
 
 | Field | Required | Description |
@@ -115,10 +135,13 @@ Append a new object to the `entries` array of the correct category (or to `skill
 | `displayUrl` | no | Override the link URL (use with `repoPath` for monorepos) |
 | `url` | no | Use instead of `repo` for non-GitHub entries |
 | `linkLabel` | no | Custom link label when using `url` |
+| `license` | no | Inline license for `url` entries (e.g. `MIT`). Ignored for `repo` entries. |
+| `lastChange` | no | Inline last-change date for `url` entries (ISO 8601). Ignored for `repo` entries. |
+| `stars` | no | Inline star count for `url` entries (integer). Ignored for `repo` entries. |
 
 ### Step 3 — Update CHANGELOG.md (new GitHub repos only)
 
-The README links to [`CHANGELOG.md`](CHANGELOG.md) at the top so readers can see **when new repositories were added**. Whenever you add a catalog entry that includes a `repo` field (including `skills` / `adjacentTools` entries that point at GitHub), append a line to `CHANGELOG.md`:
+The README links to [`CHANGELOG.md`](CHANGELOG.md) at the top so readers can see **when new repositories were added**. Whenever you add a catalog entry that includes a `repo` field (including `skills` / `claudePlugins` / `adjacentTools` entries that point at GitHub), append a line to `CHANGELOG.md`:
 
 1. Use the **commit date** (or today’s date if you are about to commit) as the section heading: `## YYYY-MM-DD`.
 2. If that date already has a section, add a bullet under it; otherwise create a new `## YYYY-MM-DD` section **above** older dates (newest first).
