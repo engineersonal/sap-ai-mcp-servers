@@ -4,6 +4,11 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-06-02
+
+- [`Hochfrequenz/sapgui.mcp`](https://github.com/Hochfrequenz/sapgui.mcp) — sapgui.mcp SAP GUI and Web GUI MCP server
+- [`matt1as/claude-abap-skills`](https://github.com/matt1as/claude-abap-skills) — ABAP Skills for Claude Code
+
 ## 2026-05-23
 
 - [`marianfoo/arc-1/skills`](https://github.com/marianfoo/arc-1/tree/main/skills) — ARC-1 SAP Skills (16 ABAP development skills for coding agents)

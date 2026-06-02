@@ -441,6 +441,13 @@
           "repo": "kts982/mcp-sap-gui",
           "purpose": "Full SAP GUI for Windows automation via Scripting API — 52 MCP tools for screen discovery, navigation, field I/O, table and tree operations, and screenshot capture.",
           "notes": "Read-only by default with MCP tool annotations, transaction allowlist for safe automation, COM retry for transient errors."
+        },
+        {
+          "type": "Community SAP",
+          "name": "sapgui.mcp",
+          "repo": "Hochfrequenz/sapgui.mcp",
+          "purpose": "Expose SAP GUI Scripting API and SAP Web GUI interactions via FastMCP.",
+          "notes": "Provides executable, Python, and Docker-based runtime options."
         }
       ]
     },
@@ -518,6 +525,13 @@
       "repo": "weiserman/rap-skills",
       "purpose": "SAP RAP-focused Claude Code skills.",
       "notes": "RAP-centric specialization."
+    },
+    {
+      "type": "Community SAP",
+      "name": "ABAP Skills for Claude Code",
+      "repo": "matt1as/claude-abap-skills",
+      "purpose": "Provide opinionated ABAP Cloud rules and slash commands for Claude Code development.",
+      "notes": "Focused on BTP ABAP Environment and S/4HANA 2023+ ABAP Cloud; assumes SAP ABAP MCP Server access."
     },
     {
       "type": "Community SAP",
